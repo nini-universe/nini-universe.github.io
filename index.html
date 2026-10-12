@@ -107,8 +107,37 @@
         }
 
         .product-icon {
-            font-size: 64px;
             margin-bottom: 20px;
+        }
+
+        .product-icon img {
+            width: 112px;
+            height: 112px;
+            border-radius: 26px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        }
+
+        .product-card .genre {
+            font-size: 14px;
+            color: #CD735E;
+            margin: -4px 0 12px;
+        }
+
+        .badge.new {
+            background: linear-gradient(135deg, #7FC8F0, #5AA9E0);
+        }
+
+        .site-link {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #8B6F47;
+            text-decoration: none;
+        }
+
+        .site-link:hover {
+            text-decoration: underline;
         }
 
         .product-card h3 {
@@ -255,43 +284,61 @@
         <section class="products">
             <h2>Our Apps</h2>
             <div class="product-grid">
+                <!-- 냥냥아일랜드 -->
+                <div class="product-card">
+                    <div class="badge new">NEW · iOS</div>
+                    <div class="product-icon">
+                        <img src="img/meow-island.png" alt="냥냥아일랜드 아이콘">
+                    </div>
+                    <h3>냥냥아일랜드</h3>
+                    <div class="genre">고양이 키우기 타이쿤</div>
+                    <p>
+                        외향형 고양이들이 사는 작은 섬. 온천·캠프·풀장·DJ 무대까지,
+                        나만의 고양이 휴양지를 키워 보세요.
+                    </p>
+                    <div class="store-links">
+                        <a href="#" class="store-link coming-soon" aria-disabled="true">📱 Play 준비 중</a>
+                        <a href="https://apps.apple.com/app/id6761288407" class="store-link" target="_blank" rel="noopener">🍎 App Store</a>
+                    </div>
+                    <a class="site-link" href="https://nini-universe.github.io/meow-island-website/">자세히 보기 →</a>
+                </div>
+
+                <!-- 타임 디펜더스 -->
+                <div class="product-card">
+                    <div class="badge">NOW AVAILABLE</div>
+                    <div class="product-icon">
+                        <img src="img/time-defenders.png" alt="타임 디펜더스 아이콘">
+                    </div>
+                    <h3>타임 디펜더스</h3>
+                    <div class="genre">머징 디펜스</div>
+                    <p>
+                        현대 특수부대로 역사를 지켜라.
+                        유닛을 합쳐 더 강하게 키우는 머징 디펜스 게임.
+                    </p>
+                    <div class="store-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.nini.timedefenders" class="store-link" target="_blank" rel="noopener">📱 Google Play</a>
+                        <a href="https://apps.apple.com/app/id6759893172" class="store-link" target="_blank" rel="noopener">🍎 App Store</a>
+                    </div>
+                    <a class="site-link" href="https://nini-universe.github.io/time-defenders-website/">자세히 보기 →</a>
+                </div>
+
                 <!-- Catlog -->
                 <div class="product-card">
                     <div class="badge">NOW AVAILABLE</div>
                     <div class="product-icon">
-                        <img src="catlog.png" alt="Catlog 로고" style="width: 200px; height: auto;">
+                        <img src="img/catlog.png" alt="Catlog 아이콘">
                     </div>
                     <h3>Catlog</h3>
+                    <div class="genre">고양이 다이어리</div>
                     <p>
                         고양이와 함께하는 감성 다이어리. 일상을 기록하고, 친구들과 공유하며,
                         나만의 고양이 방을 꾸며보세요.
                     </p>
                     <div class="store-links">
-                        <a href="#" class="store-link coming-soon">📱 Google Play</a>
-                        <a href="#" class="store-link coming-soon">🍎 App Store</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.catlog.catlog" class="store-link" target="_blank" rel="noopener">📱 Google Play</a>
+                        <a href="https://apps.apple.com/app/id6752438401" class="store-link" target="_blank" rel="noopener">🍎 App Store</a>
                     </div>
-                </div>
-
-                <!-- Future App 1 -->
-                <div class="product-card">
-                    <div class="badge">COMING SOON</div>
-                    <div class="product-icon">🎮</div>
-                    <h3>Next Project</h3>
-                    <p>
-                        새로운 게임이 곧 출시됩니다.
-                        기대해 주세요!
-                    </p>
-                </div>
-
-                <!-- Future App 2 -->
-                <div class="product-card">
-                    <div class="badge">IN DEVELOPMENT</div>
-                    <div class="product-icon">✨</div>
-                    <h3>More to Come</h3>
-                    <p>
-                        더 많은 프로젝트를 준비하고 있습니다.
-                        Nini Universe의 새로운 앱들을 기대해 주세요.
-                    </p>
+                    <a class="site-link" href="https://nini-universe.github.io/catlog-website/">자세히 보기 →</a>
                 </div>
             </div>
         </section>
@@ -307,7 +354,7 @@
 
         <!-- Footer -->
         <footer>
-            <p>© 2025 Nini Universe. All rights reserved.</p>
+            <p>© 2025–2026 Nini Universe. All rights reserved.</p>
             <p style="margin-top: 10px; font-size: 12px;">
                 Making everyday special with joy and creativity
             </p>
