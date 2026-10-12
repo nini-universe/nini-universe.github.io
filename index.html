@@ -26,6 +26,36 @@
             padding: 20px;
         }
 
+        /* 언어 전환 (오른쪽 위) */
+        .lang {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            display: flex;
+            gap: 4px;
+            background: rgba(255,255,255,0.7);
+            padding: 4px;
+            border-radius: 999px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .lang button {
+            font: inherit;
+            font-size: 13px;
+            font-weight: 600;
+            color: #8E8E8E;
+            background: none;
+            border: 0;
+            padding: 6px 12px;
+            border-radius: 999px;
+            cursor: pointer;
+        }
+
+        .lang button[aria-pressed="true"] {
+            background: #8B6F47;
+            color: white;
+        }
+
         /* Header */
         header {
             text-align: center;
@@ -260,21 +290,26 @@
     </style>
 </head>
 <body>
+    <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="ko">한국어</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ja">日本語</button>
+    </div>
     <div class="container">
         <!-- Header -->
         <header>
             <div class="logo">Nini Universe</div>
-            <div class="tagline">일상을 특별하게 만드는 앱</div>
+            <div class="tagline" data-i18n="tagline">일상을 특별하게 만드는 앱</div>
             <div class="subtitle">Games & Apps</div>
         </header>
 
         <!-- About Section -->
         <section class="about">
             <h2>About Us</h2>
-            <p>
+            <p data-i18n="about1">
                 Nini Universe는 사용자의 일상에 작은 기쁨을 더하는 게임과 다양한 앱을 만듭니다.
             </p>
-            <p>
+            <p data-i18n="about2">
                 우리는 기술과 감성을 결합하여, 사람들이 자신의 이야기를 기록하고 공유하며,
                 즐거움을 느낄 수 있는 경험을 만들어갑니다.
             </p>
@@ -288,30 +323,30 @@
                 <div class="product-card">
                     <div class="badge new">NEW · iOS</div>
                     <div class="product-icon">
-                        <img src="img/meow-island.png" alt="냥냥아일랜드 아이콘">
+                        <img src="img/meow-island.png" alt="">
                     </div>
-                    <h3>냥냥아일랜드</h3>
-                    <div class="genre">고양이 키우기 타이쿤</div>
-                    <p>
+                    <h3 data-i18n="miName">냥냥아일랜드</h3>
+                    <div class="genre" data-i18n="miGenre">고양이 키우기 타이쿤</div>
+                    <p data-i18n="miDesc">
                         외향형 고양이들이 사는 작은 섬. 온천·캠프·풀장·DJ 무대까지,
                         나만의 고양이 휴양지를 키워 보세요.
                     </p>
                     <div class="store-links">
-                        <a href="#" class="store-link coming-soon" aria-disabled="true">📱 Play 준비 중</a>
+                        <a href="#" class="store-link coming-soon" aria-disabled="true" data-i18n="playSoon">📱 Play 준비 중</a>
                         <a href="https://apps.apple.com/app/id6761288407" class="store-link" target="_blank" rel="noopener">🍎 App Store</a>
                     </div>
-                    <a class="site-link" href="https://nini-universe.github.io/meow-island-website/">자세히 보기 →</a>
+                    <a class="site-link" data-site="https://nini-universe.github.io/meow-island-website/" data-site-mode="query" href="https://nini-universe.github.io/meow-island-website/" data-i18n="more">자세히 보기 →</a>
                 </div>
 
                 <!-- 타임 디펜더스 -->
                 <div class="product-card">
                     <div class="badge">NOW AVAILABLE</div>
                     <div class="product-icon">
-                        <img src="img/time-defenders.png" alt="타임 디펜더스 아이콘">
+                        <img src="img/time-defenders.png" alt="">
                     </div>
-                    <h3>타임 디펜더스</h3>
-                    <div class="genre">머징 디펜스</div>
-                    <p>
+                    <h3 data-i18n="tdName">타임 디펜더스</h3>
+                    <div class="genre" data-i18n="tdGenre">머징 디펜스</div>
+                    <p data-i18n="tdDesc">
                         현대 특수부대로 역사를 지켜라.
                         유닛을 합쳐 더 강하게 키우는 머징 디펜스 게임.
                     </p>
@@ -319,18 +354,18 @@
                         <a href="https://play.google.com/store/apps/details?id=com.nini.timedefenders" class="store-link" target="_blank" rel="noopener">📱 Google Play</a>
                         <a href="https://apps.apple.com/app/id6759893172" class="store-link" target="_blank" rel="noopener">🍎 App Store</a>
                     </div>
-                    <a class="site-link" href="https://nini-universe.github.io/time-defenders-website/">자세히 보기 →</a>
+                    <a class="site-link" data-site="https://nini-universe.github.io/time-defenders-website/" data-site-mode="file" href="https://nini-universe.github.io/time-defenders-website/" data-i18n="more">자세히 보기 →</a>
                 </div>
 
                 <!-- Catlog -->
                 <div class="product-card">
                     <div class="badge">NOW AVAILABLE</div>
                     <div class="product-icon">
-                        <img src="img/catlog.png" alt="Catlog 아이콘">
+                        <img src="img/catlog.png" alt="">
                     </div>
-                    <h3>Catlog</h3>
-                    <div class="genre">고양이 다이어리</div>
-                    <p>
+                    <h3 data-i18n="clName">Catlog</h3>
+                    <div class="genre" data-i18n="clGenre">고양이 다이어리</div>
+                    <p data-i18n="clDesc">
                         고양이와 함께하는 감성 다이어리. 일상을 기록하고, 친구들과 공유하며,
                         나만의 고양이 방을 꾸며보세요.
                     </p>
@@ -338,7 +373,7 @@
                         <a href="https://play.google.com/store/apps/details?id=com.catlog.catlog" class="store-link" target="_blank" rel="noopener">📱 Google Play</a>
                         <a href="https://apps.apple.com/app/id6752438401" class="store-link" target="_blank" rel="noopener">🍎 App Store</a>
                     </div>
-                    <a class="site-link" href="https://nini-universe.github.io/catlog-website/">자세히 보기 →</a>
+                    <a class="site-link" data-site="https://nini-universe.github.io/catlog-website/" data-site-mode="file" href="https://nini-universe.github.io/catlog-website/" data-i18n="more">자세히 보기 →</a>
                 </div>
             </div>
         </section>
@@ -346,7 +381,7 @@
         <!-- Contact Section -->
         <section class="contact">
             <h2>Contact</h2>
-            <p>문의사항이나 제안이 있으신가요?<br>언제든지 연락주세요!</p>
+            <p data-i18n="contact">문의사항이나 제안이 있으신가요?<br>언제든지 연락주세요!</p>
             <a href="mailto:official.nini.universe@gmail.com" class="email">
                 📧 official.nini.universe@gmail.com
             </a>
@@ -360,5 +395,87 @@
             </p>
         </footer>
     </div>
+
+    <script>
+        // 한국어 · English · 日本語 — 앱 이름은 각 앱 사이트·스토어 표기와 같다
+        const T = {
+            ko: {
+                _title: 'Nini Universe - 일상을 특별하게 만드는 앱',
+                tagline: '일상을 특별하게 만드는 앱',
+                about1: 'Nini Universe는 사용자의 일상에 작은 기쁨을 더하는 게임과 다양한 앱을 만듭니다.',
+                about2: '우리는 기술과 감성을 결합하여, 사람들이 자신의 이야기를 기록하고 공유하며, 즐거움을 느낄 수 있는 경험을 만들어갑니다.',
+                miName: '냥냥아일랜드', miGenre: '고양이 키우기 타이쿤',
+                miDesc: '외향형 고양이들이 사는 작은 섬. 온천·캠프·풀장·DJ 무대까지, 나만의 고양이 휴양지를 키워 보세요.',
+                tdName: '타임 디펜더스', tdGenre: '머징 디펜스',
+                tdDesc: '현대 특수부대로 역사를 지켜라. 유닛을 합쳐 더 강하게 키우는 머징 디펜스 게임.',
+                clName: 'Catlog', clGenre: '고양이 다이어리',
+                clDesc: '고양이와 함께하는 감성 다이어리. 일상을 기록하고, 친구들과 공유하며, 나만의 고양이 방을 꾸며보세요.',
+                playSoon: '📱 Play 준비 중', more: '자세히 보기 →',
+                contact: '문의사항이나 제안이 있으신가요?<br>언제든지 연락주세요!',
+            },
+            en: {
+                _title: 'Nini Universe - Apps that make every day special',
+                tagline: 'Apps that make every day special',
+                about1: 'Nini Universe makes games and apps that add a little joy to your everyday life.',
+                about2: 'We blend technology and warmth to create experiences where people can record and share their stories and simply have fun.',
+                miName: 'Meow Meow Island', miGenre: 'Cat Tycoon',
+                miDesc: 'A little island full of outgoing cats. From hot springs and campfires to pools and a DJ stage — build your own cat resort.',
+                tdName: 'Time Defenders', tdGenre: 'Merge Defense',
+                tdDesc: 'Defend history with modern special forces. A merge defense game where you combine units to make them stronger.',
+                clName: 'Catlog', clGenre: 'Cat Diary',
+                clDesc: 'A cozy diary with your cat. Record your days, share them with friends and decorate your own cat room.',
+                playSoon: '📱 Coming soon', more: 'Learn more →',
+                contact: 'Have a question or a suggestion?<br>Feel free to reach out anytime!',
+            },
+            ja: {
+                _title: 'Nini Universe - 毎日を特別にするアプリ',
+                tagline: '毎日を特別にするアプリ',
+                about1: 'Nini Universeは、毎日の暮らしに小さな喜びを添えるゲームやアプリをつくっています。',
+                about2: 'テクノロジーとやさしさを組み合わせ、自分の物語を記録し、分かち合い、楽しめる体験を届けます。',
+                miName: 'にゃんにゃんアイランド', miGenre: 'ねこ経営タイクーン',
+                miDesc: '社交的なねこたちが暮らす小さな島。温泉・キャンプ・プール・DJステージまで、あなただけのねこリゾートを育てよう。',
+                tdName: 'タイムディフェンダーズ', tdGenre: 'マージディフェンス',
+                tdDesc: '現代特殊部隊で歴史を守り抜け。ユニットを合体させて強くするマージディフェンスゲーム。',
+                clName: 'キャットログ', clGenre: '猫と一緒の日記',
+                clDesc: '猫と一緒の、やさしい日記アプリ。毎日を記録して友だちと共有し、自分だけの猫部屋を飾りましょう。',
+                playSoon: '📱 Play 近日公開', more: '詳しく見る →',
+                contact: 'ご質問やご提案はありますか？<br>いつでもお気軽にご連絡ください！',
+            },
+        };
+
+        function pickLang() {
+            const q = new URLSearchParams(location.search).get('lang');
+            if (T[q]) return q;
+            try { const s = localStorage.getItem('nini-lang'); if (T[s]) return s; } catch (e) {}
+            const n = (navigator.language || 'ko').toLowerCase();
+            if (n.startsWith('ja')) return 'ja';
+            if (n.startsWith('ko')) return 'ko';
+            return 'en';
+        }
+
+        function apply(lang) {
+            const t = T[lang];
+            document.documentElement.lang = lang;
+            document.title = t._title;
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const v = t[el.dataset.i18n];
+                if (v != null) el.innerHTML = v;
+            });
+            // 앱 사이트도 같은 언어로 — 냥냥아일랜드는 ?lang=, 나머지는 index-en/ja.html
+            document.querySelectorAll('[data-site]').forEach(a => {
+                const base = a.dataset.site;
+                if (lang === 'ko') a.href = base;
+                else if (a.dataset.siteMode === 'query') a.href = base + '?lang=' + lang;
+                else a.href = base + 'index-' + lang + '.html';
+            });
+            document.querySelectorAll('.lang button').forEach(b =>
+                b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
+            try { localStorage.setItem('nini-lang', lang); } catch (e) {}
+        }
+
+        document.querySelectorAll('.lang button').forEach(b =>
+            b.addEventListener('click', () => apply(b.dataset.lang)));
+        apply(pickLang());
+    </script>
 </body>
 </html>
