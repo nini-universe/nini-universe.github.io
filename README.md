@@ -2,7 +2,8 @@
 
 https://nini-universe.github.io/ — GitHub Pages(이 저장소 `main` 루트).
 
-- `index.html` — 회사 소개 + 앱 목록(냥냥아일랜드 · 타임 디펜더스 · Catlog) + 문의
+- `index.html` — 히어로 + 앱 목록(냥냥아일랜드 · 타임 디펜더스 · Catlog) + 소개 + 문의. 한 파일에 CSS·JS·3개 언어 문구(`T`)가 모두 들어 있다.
+  글꼴은 Pretendard(jsdelivr CDN)를 쓰고, 못 받으면 시스템 글꼴로 떨어진다.
 - `img/` — 앱 아이콘 (256px)
 - `app-ads.txt` — **AdMob 판매자 확인 파일. 지우지 말 것.** AdMob은 앱 스토어에 적힌
   개발자 웹사이트 도메인의 **맨 앞 경로**(`https://nini-universe.github.io/app-ads.txt`)만 읽는다.
