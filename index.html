@@ -144,21 +144,7 @@
   .more:hover { color: var(--ink); }
   .more:hover::after { transform: translateX(3px); }
 
-  /* ── 소개 ── */
-  .about .inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px; align-items: center; }
-  .about p.big { margin-top: 20px; font-size: 18px; color: var(--ink-2); }
-  .values { display: grid; gap: 12px; }
-  .value {
-    display: flex; gap: 16px; align-items: flex-start; background: var(--surface);
-    border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px;
-  }
-  .value .ic { flex: none; width: 42px; height: 42px; border-radius: 12px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; }
-  .value .ic svg { width: 20px; height: 20px; }
-  .value b { display: block; font-size: 16px; font-weight: 700; }
-  .value span { display: block; margin-top: 2px; font-size: 14px; color: var(--sub); }
-
   /* ── 문의 ── */
-  .contact { padding-top: 0; }
   .contact .box {
     background: var(--ink); color: var(--bg); border-radius: 28px; padding: 56px 24px; text-align: center;
     background-image: radial-gradient(50% 80% at 50% 100%, rgba(217, 130, 43, 0.35) 0%, rgba(217, 130, 43, 0) 100%);
@@ -186,7 +172,6 @@
 
   @media (max-width: 860px) {
     .grid { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
-    .about .inner { grid-template-columns: 1fr; gap: 32px; }
   }
   @media (max-width: 600px) {
     .menu { display: none; }
@@ -205,7 +190,6 @@
     <a class="brand" href="#top"><span class="mark" aria-hidden="true">N</span>Nini Universe</a>
     <nav class="menu" aria-label="Sections">
       <a href="#apps" data-i18n="navApps">앱</a>
-      <a href="#about" data-i18n="navAbout">소개</a>
       <a href="#contact" data-i18n="navContact">문의</a>
     </nav>
     <div class="lang" role="group" aria-label="Language">
@@ -221,9 +205,9 @@
     <div class="wrap">
       <span class="eyebrow">Games &amp; Apps Studio</span>
       <h1 data-i18n="heroTitle">일상을 <em>특별하게</em><br>만드는 앱</h1>
-      <p class="lead" data-i18n="heroLead">Nini Universe는 사용자의 일상에 작은 기쁨을 더하는 게임과 다양한 앱을 만듭니다.</p>
+      <p class="lead" data-i18n="heroLead">Nini Universe는 게임과 앱을 만드는 작은 인디 스튜디오입니다.</p>
       <div class="cta">
-        <a class="btn primary" href="#apps" data-i18n="ctaApps">앱 둘러보기</a>
+        <a class="btn primary" href="#apps" data-i18n="ctaApps">앱 보기</a>
         <a class="btn ghost" href="#contact" data-i18n="ctaContact">문의하기</a>
       </div>
       <div class="icons" aria-hidden="true">
@@ -237,9 +221,9 @@
   <section class="apps" id="apps">
     <div class="wrap">
       <div class="head center reveal">
-        <span class="eyebrow" data-i18n="appsEyebrow">Our Apps</span>
-        <h2 data-i18n="appsTitle">지금 만나볼 수 있는 앱</h2>
-        <p class="section-lead" data-i18n="appsLead">고양이와 보내는 하루부터 역사를 지키는 전투까지. 작지만 정성껏 만든 세 가지 이야기.</p>
+        <span class="eyebrow" data-i18n="appsEyebrow">Apps</span>
+        <h2 data-i18n="appsTitle">출시한 앱</h2>
+        <p class="section-lead" data-i18n="appsLead">App Store와 Google Play에서 받을 수 있어요.</p>
       </div>
       <div class="grid">
         <!-- 냥냥아일랜드 -->
@@ -311,37 +295,12 @@
     </div>
   </section>
 
-  <section class="about" id="about">
-    <div class="wrap inner">
-      <div class="head reveal">
-        <span class="eyebrow" data-i18n="aboutEyebrow">About</span>
-        <h2 data-i18n="aboutTitle">기술과 감성이 만나는 곳</h2>
-        <p class="big" data-i18n="about1">Nini Universe는 사용자의 일상에 작은 기쁨을 더하는 게임과 다양한 앱을 만듭니다.</p>
-        <p class="big" data-i18n="about2">우리는 기술과 감성을 결합하여, 사람들이 자신의 이야기를 기록하고 공유하며, 즐거움을 느낄 수 있는 경험을 만들어갑니다.</p>
-      </div>
-      <div class="values reveal">
-        <div class="value">
-          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.6L18.5 9.5l-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9z"/><path d="M19 15l.8 1.9 1.9.8-1.9.8L19 20.4l-.8-1.9-1.9-.8 1.9-.8z"/></svg></span>
-          <div><b data-i18n="v1t">작은 기쁨</b><span data-i18n="v1d">거창하지 않아도, 매일 꺼내 보고 싶은 경험을 만듭니다.</span></div>
-        </div>
-        <div class="value">
-          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4l10-10-4-4L4 16z"/><path d="M13 7l4 4"/></svg></span>
-          <div><b data-i18n="v2t">기록과 공유</b><span data-i18n="v2d">자신의 이야기를 남기고 친구와 나누는 즐거움을 담습니다.</span></div>
-        </div>
-        <div class="value">
-          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.4-7 10-7 10z"/></svg></span>
-          <div><b data-i18n="v3t">따뜻한 완성도</b><span data-i18n="v3d">세 가지 언어, 두 플랫폼. 작은 디테일까지 정성껏 다듬습니다.</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="contact" id="contact">
     <div class="wrap">
       <div class="box reveal">
         <span class="eyebrow" data-i18n="contactEyebrow">Contact</span>
-        <h2 data-i18n="contactTitle">문의나 제안이 있으신가요?</h2>
-        <p class="section-lead" data-i18n="contactLead">앱에 대한 의견, 협업 제안, 오류 신고 모두 환영합니다. 언제든지 연락주세요.</p>
+        <h2 data-i18n="contactTitle">문의하기</h2>
+        <p class="section-lead" data-i18n="contactLead">앱 의견, 오류 신고, 제안은 메일로 보내 주세요.</p>
         <a class="btn" href="mailto:official.nini.universe@gmail.com">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 8l9 6 9-6"/></svg>
           official.nini.universe@gmail.com
@@ -363,12 +322,12 @@
   const T = {
     ko: {
       _title: 'Nini Universe - 일상을 특별하게 만드는 앱',
-      navApps: '앱', navAbout: '소개', navContact: '문의',
+      navApps: '앱', navContact: '문의',
       heroTitle: '일상을 <em>특별하게</em><br>만드는 앱',
-      heroLead: 'Nini Universe는 사용자의 일상에 작은 기쁨을 더하는 게임과 다양한 앱을 만듭니다.',
-      ctaApps: '앱 둘러보기', ctaContact: '문의하기',
-      appsEyebrow: 'Our Apps', appsTitle: '지금 만나볼 수 있는 앱',
-      appsLead: '고양이와 보내는 하루부터 역사를 지키는 전투까지. 작지만 정성껏 만든 세 가지 이야기.',
+      heroLead: 'Nini Universe는 게임과 앱을 만드는 작은 인디 스튜디오입니다.',
+      ctaApps: '앱 보기', ctaContact: '문의하기',
+      appsEyebrow: 'Apps', appsTitle: '출시한 앱',
+      appsLead: 'App Store와 Google Play에서 받을 수 있어요.',
       stNew: 'NEW', stLive: '출시 중',
       miName: '냥냥아일랜드', miGenre: '고양이 키우기 타이쿤',
       miDesc: '외향형 고양이들이 사는 작은 섬. 온천·캠프·풀장·DJ 무대까지, 나만의 고양이 휴양지를 키워 보세요.',
@@ -377,23 +336,17 @@
       clName: 'Catlog', clGenre: '고양이 다이어리',
       clDesc: '고양이와 함께하는 감성 다이어리. 일상을 기록하고, 친구들과 공유하며, 나만의 고양이 방을 꾸며보세요.',
       playSoon: 'Play 준비 중', more: '자세히 보기',
-      aboutEyebrow: 'About', aboutTitle: '기술과 감성이 만나는 곳',
-      about1: 'Nini Universe는 사용자의 일상에 작은 기쁨을 더하는 게임과 다양한 앱을 만듭니다.',
-      about2: '우리는 기술과 감성을 결합하여, 사람들이 자신의 이야기를 기록하고 공유하며, 즐거움을 느낄 수 있는 경험을 만들어갑니다.',
-      v1t: '작은 기쁨', v1d: '거창하지 않아도, 매일 꺼내 보고 싶은 경험을 만듭니다.',
-      v2t: '기록과 공유', v2d: '자신의 이야기를 남기고 친구와 나누는 즐거움을 담습니다.',
-      v3t: '따뜻한 완성도', v3d: '세 가지 언어, 두 플랫폼. 작은 디테일까지 정성껏 다듬습니다.',
-      contactEyebrow: 'Contact', contactTitle: '문의나 제안이 있으신가요?',
-      contactLead: '앱에 대한 의견, 협업 제안, 오류 신고 모두 환영합니다. 언제든지 연락주세요.',
+      contactEyebrow: 'Contact', contactTitle: '문의하기',
+      contactLead: '앱 의견, 오류 신고, 제안은 메일로 보내 주세요.',
     },
     en: {
       _title: 'Nini Universe - Apps that make every day special',
-      navApps: 'Apps', navAbout: 'About', navContact: 'Contact',
+      navApps: 'Apps', navContact: 'Contact',
       heroTitle: 'Apps that make<br>every day <em>special</em>',
-      heroLead: 'Nini Universe makes games and apps that add a little joy to your everyday life.',
-      ctaApps: 'Explore apps', ctaContact: 'Get in touch',
-      appsEyebrow: 'Our Apps', appsTitle: 'Available now',
-      appsLead: 'From a day with your cat to battles that protect history. Three small stories, made with care.',
+      heroLead: 'Nini Universe is a small indie studio making games and apps.',
+      ctaApps: 'See apps', ctaContact: 'Contact',
+      appsEyebrow: 'Apps', appsTitle: 'Our apps',
+      appsLead: 'Available on the App Store and Google Play.',
       stNew: 'NEW', stLive: 'LIVE',
       miName: 'Meow Meow Island', miGenre: 'Cat Tycoon',
       miDesc: 'A little island full of outgoing cats. From hot springs and campfires to pools and a DJ stage — build your own cat resort.',
@@ -402,23 +355,17 @@
       clName: 'Catlog', clGenre: 'Cat Diary',
       clDesc: 'A cozy diary with your cat. Record your days, share them with friends and decorate your own cat room.',
       playSoon: 'Coming soon', more: 'Learn more',
-      aboutEyebrow: 'About', aboutTitle: 'Where technology meets warmth',
-      about1: 'Nini Universe makes games and apps that add a little joy to your everyday life.',
-      about2: 'We blend technology and warmth to create experiences where people can record and share their stories and simply have fun.',
-      v1t: 'Small joys', v1d: 'Nothing grand — just experiences you want to open every day.',
-      v2t: 'Record & share', v2d: 'Keep your own story and enjoy sharing it with friends.',
-      v3t: 'Crafted with care', v3d: 'Three languages, two platforms. We polish every little detail.',
-      contactEyebrow: 'Contact', contactTitle: 'Have a question or a suggestion?',
-      contactLead: 'Feedback, collaboration ideas and bug reports are all welcome. Reach out anytime.',
+      contactEyebrow: 'Contact', contactTitle: 'Get in touch',
+      contactLead: 'Feedback, bug reports and suggestions — send us an email.',
     },
     ja: {
       _title: 'Nini Universe - 毎日を特別にするアプリ',
-      navApps: 'アプリ', navAbout: '私たちについて', navContact: 'お問い合わせ',
+      navApps: 'アプリ', navContact: 'お問い合わせ',
       heroTitle: '毎日を<em>特別に</em>する<br>アプリ',
-      heroLead: 'Nini Universeは、毎日の暮らしに小さな喜びを添えるゲームやアプリをつくっています。',
+      heroLead: 'Nini Universeは、ゲームやアプリをつくる小さなインディースタジオです。',
       ctaApps: 'アプリを見る', ctaContact: 'お問い合わせ',
-      appsEyebrow: 'Our Apps', appsTitle: '配信中のアプリ',
-      appsLead: '猫と過ごす一日から、歴史を守る戦いまで。小さくても心を込めてつくった3つの物語。',
+      appsEyebrow: 'Apps', appsTitle: 'リリースしたアプリ',
+      appsLead: 'App StoreとGoogle Playで配信中です。',
       stNew: 'NEW', stLive: '配信中',
       miName: 'にゃんにゃんアイランド', miGenre: 'ねこ経営タイクーン',
       miDesc: '社交的なねこたちが暮らす小さな島。温泉・キャンプ・プール・DJステージまで、あなただけのねこリゾートを育てよう。',
@@ -427,14 +374,8 @@
       clName: 'キャットログ', clGenre: '猫と一緒の日記',
       clDesc: '猫と一緒の、やさしい日記アプリ。毎日を記録して友だちと共有し、自分だけの猫部屋を飾りましょう。',
       playSoon: '近日公開', more: '詳しく見る',
-      aboutEyebrow: 'About', aboutTitle: 'テクノロジーとやさしさが出会う場所',
-      about1: 'Nini Universeは、毎日の暮らしに小さな喜びを添えるゲームやアプリをつくっています。',
-      about2: 'テクノロジーとやさしさを組み合わせ、自分の物語を記録し、分かち合い、楽しめる体験を届けます。',
-      v1t: '小さな喜び', v1d: '大げさでなくても、毎日開きたくなる体験をつくります。',
-      v2t: '記録と共有', v2d: '自分の物語を残し、友だちと分かち合う楽しさを込めます。',
-      v3t: '丁寧なつくり', v3d: '3つの言語、2つのプラットフォーム。細部まで心を込めて磨きます。',
-      contactEyebrow: 'Contact', contactTitle: 'ご質問やご提案はありますか？',
-      contactLead: 'アプリへのご意見、コラボのご提案、不具合のご報告など、いつでもお気軽にどうぞ。',
+      contactEyebrow: 'Contact', contactTitle: 'お問い合わせ',
+      contactLead: 'ご意見・不具合のご報告・ご提案はメールでお送りください。',
     },
   };
 
