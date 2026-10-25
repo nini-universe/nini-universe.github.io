@@ -9,4 +9,8 @@ https://nini-universe.github.io/ — GitHub Pages(이 저장소 `main` 루트).
   개발자 웹사이트 도메인의 **맨 앞 경로**(`https://nini-universe.github.io/app-ads.txt`)만 읽는다.
   같은 AdMob 계정을 쓰는 세 앱이 모두 이 파일 하나로 확인된다.
 
+- `analytics.js` — **모든 앱 사이트가 같이 쓰는 GA4 스크립트** (측정 ID `G-C5DM8ZJ9N5`). 각 사이트가 `<script src="/analytics.js">`로 불러온다.
+  스토어 링크 클릭과 자동 이동을 `store_click` 이벤트(`app_name`·`store`·`method`)로, 앱 안 브라우저(인스타·틱톡 등)를 `in_app`으로 보낸다.
+  새 앱을 추가하면 파일 안 `APPS`에 스토어 앱 ID를 넣는다. 다른 사이트보다 **먼저 배포**해야 한다.
+
 앱별 소개 사이트는 각자 저장소다: `meow-island-website`, `time-defenders-website`, `catlog-website`.
