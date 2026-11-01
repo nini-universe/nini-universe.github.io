@@ -6,7 +6,7 @@
 
   // 스토어 URL 속 앱 ID → 앱 이름
   var APPS = {
-    id6761288407: 'meow_island',
+    id6761288407: 'meow_island', 'com.nini.catisland': 'meow_island',
     id6759893172: 'time_defenders', 'com.nini.timedefenders': 'time_defenders',
     id6752438401: 'catlog', 'com.catlog.catlog': 'catlog',
   };
