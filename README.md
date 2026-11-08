@@ -23,3 +23,4 @@ https://nini-universe.github.io/ — GitHub Pages(이 저장소 `main` 루트).
 - 검색 봇에게는 언어 자동 감지를 끄고 한국어 기본 HTML을 보여 준다 (구글봇은 영어 환경이라 그대로 두면 영어로 색인된다).
 - 링크 미리보기 이미지는 `og:image`에 **절대 주소**로 넣는다 (상대 주소는 카카오톡 등에서 안 보인다).
 - `google7df81d4ecfaa1aca.html` — **Google Search Console 소유권 확인 파일. 지우지 말 것** (지우면 소유권이 풀린다).
+- `naverbc86dc23c95f940566e25923a65e6d87.html` — **네이버 서치어드바이저 소유 확인 파일. 지우지 말 것.**
