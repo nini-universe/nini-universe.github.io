@@ -14,3 +14,12 @@ https://nini-universe.github.io/ — GitHub Pages(이 저장소 `main` 루트).
   새 앱을 추가하면 파일 안 `APPS`에 스토어 앱 ID를 넣는다. 다른 사이트보다 **먼저 배포**해야 한다.
 
 앱별 소개 사이트는 각자 저장소다: `meow-island-website`, `time-defenders-website`, `catlog-website`.
+
+## 검색 (SEO)
+- `robots.txt` · `sitemap.xml` — 이 루트에 두면 `nini-universe.github.io` 아래 모든 앱 사이트에 적용된다.
+  **새 앱 사이트를 추가하면 `sitemap.xml`에 언어별 주소를 넣는다.** `/download/` 페이지는 넣지 않는다(`noindex`).
+- 언어별 주소: 한국어 = 기본 주소, 영어·일본어 = `?lang=en` / `?lang=ja` (캣로그만 `index-en.html` / `index-ja.html`).
+  각 페이지 `<head>`의 `hreflang`·canonical이 이 규칙을 따른다.
+- 검색 봇에게는 언어 자동 감지를 끄고 한국어 기본 HTML을 보여 준다 (구글봇은 영어 환경이라 그대로 두면 영어로 색인된다).
+- 링크 미리보기 이미지는 `og:image`에 **절대 주소**로 넣는다 (상대 주소는 카카오톡 등에서 안 보인다).
+- `google7df81d4ecfaa1aca.html` — **Google Search Console 소유권 확인 파일. 지우지 말 것** (지우면 소유권이 풀린다).

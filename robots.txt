@@ -1,0 +1,6 @@
+# Nini Universe — nini-universe.github.io 아래 모든 앱 사이트에 적용된다
+# /download/ 페이지는 막지 않는다 — 페이지 안의 noindex를 검색엔진이 읽어야 검색 결과에서 빠지고, 링크 미리보기도 그대로 동작한다
+User-agent: *
+Allow: /
+
+Sitemap: https://nini-universe.github.io/sitemap.xml

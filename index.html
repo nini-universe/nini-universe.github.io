@@ -3,10 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nini Universe - 일상을 특별하게 만드는 앱</title>
-<meta name="description" content="Nini Universe는 게임과 다양한 생활앱을 만드는 창작 스튜디오입니다.">
-<meta property="og:title" content="Nini Universe">
-<meta property="og:description" content="일상을 특별하게 만드는 게임과 앱을 만드는 창작 스튜디오">
+<title>Nini Universe 니니 유니버스 - 인디 모바일 게임·앱 스튜디오</title>
+<meta name="description" content="냥냥아일랜드, 타임 디펜더스, 캣로그를 만든 인디 스튜디오 Nini Universe(니니 유니버스). 일상을 특별하게 만드는 무료 모바일 게임과 앱을 App Store·Google Play에서 만나 보세요.">
+<!-- 검색 — 한국어는 기본 주소, 영어·일본어는 ?lang= 주소. canonical은 아래 스크립트가 주소에 맞춰 단다 -->
+<link rel="alternate" hreflang="ko" href="https://nini-universe.github.io/">
+<link rel="alternate" hreflang="en" href="https://nini-universe.github.io/?lang=en">
+<link rel="alternate" hreflang="ja" href="https://nini-universe.github.io/?lang=ja">
+<link rel="alternate" hreflang="x-default" href="https://nini-universe.github.io/">
+<script>
+  (function () {
+    var l = new URLSearchParams(location.search).get('lang');
+    var c = document.createElement('link'); c.rel = 'canonical';
+    c.href = 'https://nini-universe.github.io/' + (l === 'en' || l === 'ja' ? '?lang=' + l : '');
+    document.head.appendChild(c);
+  })();
+</script>
+<!-- 링크 미리보기 (카카오톡·페이스북·X 등) — 이미지 주소는 반드시 절대 주소 -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nini Universe">
+<meta property="og:url" content="https://nini-universe.github.io/">
+<meta property="og:title" content="Nini Universe - 일상을 특별하게 만드는 게임과 앱">
+<meta property="og:description" content="냥냥아일랜드 · 타임 디펜더스 · 캣로그를 만든 인디 스튜디오">
+<meta property="og:image" content="https://nini-universe.github.io/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Nini Universe",
+    "alternateName": ["니니 유니버스", "NINI Universe"],
+    "url": "https://nini-universe.github.io/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Nini Universe",
+    "alternateName": "니니 유니버스",
+    "url": "https://nini-universe.github.io/",
+    "email": "official.nini.universe@gmail.com",
+    "description": "게임과 앱을 만드는 인디 스튜디오. 냥냥아일랜드, 타임 디펜더스, 캣로그 개발.",
+    "owns": [
+      { "@type": "MobileApplication", "isAccessibleForFree": true, "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" }, "name": "냥냥아일랜드", "alternateName": "Meow Meow Island", "url": "https://nini-universe.github.io/meow-island-website/" },
+      { "@type": "MobileApplication", "isAccessibleForFree": true, "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" }, "name": "타임 디펜더스 : 머지 & 디펜스", "alternateName": "Time Defenders", "url": "https://nini-universe.github.io/time-defenders-website/" },
+      { "@type": "MobileApplication", "isAccessibleForFree": true, "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" }, "name": "캣로그", "alternateName": "Catlog", "url": "https://nini-universe.github.io/catlog-website/" }
+    ]
+  }
+]
+</script>
 <meta name="theme-color" content="#FBF7F2">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232A211B'/%3E%3Cpath d='M20 46V18h6l12 18V18h6v28h-6L26 28v18z' fill='%23FBF7F2'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -320,7 +369,8 @@
   // 한국어 · English · 日本語 — 앱 이름은 각 앱 사이트·스토어 표기와 같다
   const T = {
     ko: {
-      _title: 'Nini Universe - 일상을 특별하게 만드는 앱',
+      _title: 'Nini Universe 니니 유니버스 - 인디 모바일 게임·앱 스튜디오',
+      _desc: '냥냥아일랜드, 타임 디펜더스, 캣로그를 만든 인디 스튜디오 Nini Universe(니니 유니버스). 일상을 특별하게 만드는 무료 모바일 게임과 앱을 App Store·Google Play에서 만나 보세요.',
       navApps: '앱', navContact: '문의',
       heroTitle: '일상을 <em>특별하게</em><br>만드는 앱',
       heroLead: 'Nini Universe는 게임과 앱을 만드는 작은 인디 스튜디오입니다.',
@@ -339,7 +389,8 @@
       contactLead: '앱 의견, 오류 신고, 제안은 메일로 보내 주세요.',
     },
     en: {
-      _title: 'Nini Universe - Apps that make every day special',
+      _title: 'Nini Universe - Indie Mobile Game & App Studio',
+      _desc: 'Nini Universe is the indie studio behind Meow Meow Island, Time Defenders and Catlog — free mobile games and apps that make every day special, on the App Store and Google Play.',
       navApps: 'Apps', navContact: 'Contact',
       heroTitle: 'Apps that make<br>every day <em>special</em>',
       heroLead: 'Nini Universe is a small indie studio making games and apps.',
@@ -358,7 +409,8 @@
       contactLead: 'Feedback, bug reports and suggestions — send us an email.',
     },
     ja: {
-      _title: 'Nini Universe - 毎日を特別にするアプリ',
+      _title: 'Nini Universe - インディーモバイルゲーム・アプリスタジオ',
+      _desc: 'にゃんにゃんアイランド、タイムディフェンダーズ、キャットログを手がけるインディースタジオNini Universe。毎日を特別にする無料のモバイルゲームとアプリをApp Store・Google Playで配信中。',
       navApps: 'アプリ', navContact: 'お問い合わせ',
       heroTitle: '毎日を<em>特別に</em>する<br>アプリ',
       heroLead: 'Nini Universeは、ゲームやアプリをつくる小さなインディースタジオです。',
@@ -381,6 +433,8 @@
   function pickLang() {
     const q = new URLSearchParams(location.search).get('lang');
     if (T[q]) return q;
+    // 검색엔진 봇에게는 HTML 기본 언어(한국어)를 보여 준다 — 영어·일본어는 ?lang= 주소로 따로 색인된다
+    if (/googlebot|google-inspectiontool|bingbot|yeti|daumoa|duckduckbot|applebot|yandex|baiduspider|slurp|crawler|spider/i.test(navigator.userAgent)) return 'ko';
     try { const s = localStorage.getItem('nini-lang'); if (T[s]) return s; } catch (e) {}
     const n = (navigator.language || 'ko').toLowerCase();
     if (n.startsWith('ja')) return 'ja';
@@ -392,6 +446,7 @@
     const t = T[lang];
     document.documentElement.lang = lang;
     document.title = t._title;
+    document.querySelector('meta[name="description"]').content = t._desc;
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const v = t[el.dataset.i18n];
       if (v != null) el.innerHTML = v;

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 새 앱 사이트를 추가하면 여기에도 언어별 주소를 넣는다. /download/ 페이지는 넣지 않는다(noindex) -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://nini-universe.github.io/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nini-universe.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nini-universe.github.io/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nini-universe.github.io/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nini-universe.github.io/"/>
+  </url>
+  <url>
+    <loc>https://nini-universe.github.io/?lang=en</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nini-universe.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nini-universe.github.io/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nini-universe.github.io/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nini-universe.github.io/"/>
+  </url>
+  <url>
+    <loc>https://nini-universe.github.io/?lang=ja</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nini-universe.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nini-universe.github.io/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nini-universe.github.io/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nini-universe.github.io/"/>
+  </url>
+  <url>
+    <loc>https://nini-universe.github.io/meow-island-website/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nini-universe.github.io/meow-island-website/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nini-universe.github.io/meow-island-website/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nini-universe.github.io/meow-island-website/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nini-universe.github.io/meow-island-website/"/>
+  </url>
+  <url>
+    <loc>https://nini-universe.github.io/meow-island-website/?lang=en</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nini-universe.github.io/meow-island-website/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nini-universe.github.io/meow-island-website/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nini-universe.github.io/meow-island-website/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nini-universe.github.io/meow-island-website/"/>
+  </url>
+  <url>
+    <loc>https://nini-universe.github.io/meow-island-website/?lang=ja</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nini-universe.github.io/meow-island-website/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nini-universe.github.io/meow-island-website/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nini-universe.github.io/meow-island-website/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nini-universe.github.io/meow-island-website/"/>
+  </url>
+  <url>
+    <loc>https://nini-universe.github.io/time-defenders-website/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nini-universe.github.io/time-defenders-website/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nini-universe.github.io/time-defenders-website/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nini-universe.github.io/time-defenders-website/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nini-universe.github.io/time-defenders-website/"/>
+  </url>
+  <url>
+    <loc>https://nini-universe.github.io/time-defenders-website/?lang=en</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nini-universe.github.io/time-defenders-website/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nini-universe.github.io/time-defenders-website/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nini-universe.github.io/time-defenders-website/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nini-universe.github.io/time-defenders-website/"/>
+  </url>
+  <url>
+    <loc>https://nini-universe.github.io/time-defenders-website/?lang=ja</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nini-universe.github.io/time-defenders-website/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nini-universe.github.io/time-defenders-website/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nini-universe.github.io/time-defenders-website/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nini-universe.github.io/time-defenders-website/"/>
+  </url>
+  <url>
+    <loc>https://nini-universe.github.io/catlog-website/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nini-universe.github.io/catlog-website/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nini-universe.github.io/catlog-website/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nini-universe.github.io/catlog-website/index-ja.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nini-universe.github.io/catlog-website/"/>
+  </url>
+  <url>
+    <loc>https://nini-universe.github.io/catlog-website/index-en.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nini-universe.github.io/catlog-website/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nini-universe.github.io/catlog-website/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nini-universe.github.io/catlog-website/index-ja.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nini-universe.github.io/catlog-website/"/>
+  </url>
+  <url>
+    <loc>https://nini-universe.github.io/catlog-website/index-ja.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nini-universe.github.io/catlog-website/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nini-universe.github.io/catlog-website/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nini-universe.github.io/catlog-website/index-ja.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nini-universe.github.io/catlog-website/"/>
+  </url>
+</urlset>
